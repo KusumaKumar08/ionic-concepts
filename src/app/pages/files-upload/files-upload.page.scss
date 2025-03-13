@@ -1,0 +1,25 @@
+.images-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.images__item {
+    width: calc((100% - 30px)/3);
+    height: 100px;
+    object-fit: contain;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    object-fit: fill;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

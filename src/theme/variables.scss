@@ -1,2 +1,46 @@
-// For information on how to create your own theme, please see:
-// http://ionicframework.com/docs/theming/
+@font-face {
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+:root {
+    --color-primary: #00c3bf;
+    --color-teal: #00c3bf;
+    --color-orange: #FF6600;
+    --color-white: #ffffff;
+    --color-dark: #000000;
+    --color-blue: #0360e8;
+    --color-gray: #cccccc;
+    --color-green: #16d816;
+    --color-red: #ff0000;
+    --color-darkgray: #606060;
+
+    /** fonts family **/
+    --Roboto-Light: "Roboto-Light";
+    --Roboto-Regular: "Roboto-Regular";
+    --Roboto-Bold: "Roboto-Bold";
+    --Roboto-Medium: "Roboto-Medium";
+}

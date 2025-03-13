@@ -1,20 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header class="m-header">
+  <ion-toolbar class="m-header__toolbar">
+    <ion-title class="m-headr__title">Topics</ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="m-menus">
+  <div class="m-menus__container">
+    @for (item of topics; track $index) {
+    <ion-item class="m-menus__item" (click)="_doNavigate($index)">
+      <h1 class="m-menu__text">{{item.menuLabel}}</h1>
+    </ion-item>
+    }
   </div>
+  <!-- <ion-input maxlength="1"  [(ngModel)]="data"></ion-input> -->
 </ion-content>

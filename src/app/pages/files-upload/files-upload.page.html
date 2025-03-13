@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> Files upload</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h1>Single picture</h1>
+    @if (image!=='') { <div class="image"><img [src]="image" alt=""></div>}
+  </div>
+  <h1>Multiple pictures</h1>
+  @if (files.length>0) {
+  <div class="images-container">
+    @for (item of files; track $index) {
+    <div class="images__item">
+      <img [src]="item.path" alt="" class="image">
+    </div>
+    }
+  </div>
+  }
+  <div></div>
+</ion-content>
+<ion-footer class="button">
+  <ion-button (click)="takePicture()">Take picture</ion-button>
+  <ion-button (click)="uploadMultipleImages()">Multiple Images</ion-button>
+
+</ion-footer>

@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-buttons>
+    <ion-button (click)="open()"></ion-button>
+  </ion-buttons>
+  <ion-toolbar>
+    <ion-title>authentication</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>Is fingerprint is present:{{isAvailable}}</ion-item>
+</ion-content>
+<ion-footer>
+  <div class="">
+    <div class="imgcontainer">
+      <img src="assets/svgs/security.svg" width="80" height="80" (click)="authenticateWithFingerprint()">
+    </div>
+  </div>
+</ion-footer>
